@@ -1,0 +1,40 @@
+.placeorder {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 100px;
+    gap: 50px;
+}
+.placeorderleft{
+    width: 100%;
+    max-width: max(30%,500px);
+}
+.placeorderleft .title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.placeorderleft input {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #eee;
+    outline-color: tomato;
+    border-radius: 4px;
+}
+.placeorderleft .multi-fields{
+    display: flex;
+    gap: 10px;
+}
+.placeorderright {
+    width: 100%;
+    max-width: max(40%, 500px);
+}
+.placeorder .cart-total button {
+    margin-top: 30px;
+}
+@media (max-width:750px){
+    .placeorder {
+        flex-direction: column-reverse;
+    }
+}

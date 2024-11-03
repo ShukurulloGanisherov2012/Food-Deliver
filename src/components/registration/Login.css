@@ -1,0 +1,108 @@
+.login {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* yarim shaffof background */
+    overflow: hidden;
+    display: grid;
+}
+
+.login-container {
+    place-self: center;
+    width: max(23vw, 330px);
+    color: #4a4a4a;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 30px 35px;
+    border-radius: 12px;
+    font-size: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow qo'shildi */
+    animation: fadeIn 0.5s;
+    transition: transform 0.3s;
+}
+
+.login-container:hover {
+    transform: scale(1.02); /* Hover holatda biroz kattalashtirish */
+}
+
+.login-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+    font-weight: 600;
+}
+
+.login-title img {
+    width: 18px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.login-title img:hover {
+    transform: rotate(90deg); /* Rasm ustida hoverda aylanadi */
+}
+
+.login-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.login-inputs input {
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 12px;
+    border-radius: 5px;
+    transition: border-color 0.2s;
+}
+
+.login-inputs input:focus {
+    border-color: #ff6347; /* Fokus holatida border rang o'zgarishi */
+}
+
+.login-container button {
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    color: white;
+    background-color: #ff6347; /* Tomato rangida */
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #e5533d; /* Hoverda biroz quyuqroq rang */
+    transform: scale(1.02);
+}
+
+.login-condition {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    margin-top: -10px;
+    color: #666;
+    font-size: 13px;
+}
+
+.login-condition input {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.login p span {
+    color: #ff6347;
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.login p span:hover {
+    color: #e5533d;
+    text-decoration: underline; /* Link uslubida ko'rsatish */
+}
