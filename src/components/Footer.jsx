@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="footer-content">
         <div className="footer-left">
             <img src={assets.logo} alt="" />
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, odio recusandae illum inventore dolorem voluptates incidunt quo ducimus perspiciatis id nostrum harum obcaecati consectetur eaque iste blanditiis ex accusantium aliquid?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, odio recusandae illum inventore dolorem voluptates incidunt quo ducimus perspiciatis id nostrum </p>
             <div className="footer-social-icons">
                 <img src={assets.facebook_icon} alt="" />
                 <img src={assets.twitter_icon} alt="" />
